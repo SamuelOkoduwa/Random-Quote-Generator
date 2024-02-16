@@ -22,6 +22,9 @@ body {
   align-items: center;
   padding: 40px;
   box-sizing: border-box;
+  transition-property: width;
+  transition-duration: 450ms;
+  transition-timing-function: ease-in-out;
 }
 
 .title {
@@ -138,31 +141,39 @@ button:hover {
 
 @keyframes rotate {
   20% {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
   }
 
   50% {
-    transform: rotate(-180deg);
+    transform: rotate(180deg);
   }
 
   100% {
-    transform: rotate(90deg);
+    transform: rotate(360deg);
   }
 }
 
 @media screen and (max-width: 1024px) {
-  :root{
-    font-size: 15px;
-  }
-    .hero {
-        width: 70%;
-    }
-
-    #generate{
-      display: none;
-    }
-    /* #quote{
-      font-size: 90%;
-    } */
   
+  .hero {
+    width: 70%;
+  }
+
+  #generate {
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width: 425px) {
+  
+  .hero {
+    width: 95%;
+  }
+
+  #generate {
+    display: none;
+  }
+
 }
