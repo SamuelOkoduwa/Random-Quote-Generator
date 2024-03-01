@@ -61,11 +61,6 @@ async function changeBg() {
       //add the author gotten from the api to the html output
       document.getElementById("quoter").textContent = `- ${quoteData[0].author}`;
 
-      // if (words.length <= 15) {
-      //   document.getElementById("quote").style.fontSize = "1.5rem";
-      // }else if(words.length > 15 && words.length <= 70){
-      //   document.getElementById("quote").style.fontSize = "1rem";
-      // }
     }
   }
 }
